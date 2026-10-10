@@ -1,0 +1,89 @@
+
+<section class="w-full bg-secondary text-white pb-10">
+    <div class="wave-container"></div>
+	<div class="flex flex-col justify-center items-center">
+		<h2 class="font-bold text-6xl text-center mb-20">Features</h2>
+		<div class="grid grid-cols-2 gap-x-10 gap-y-20 w-full max-w-7xl">
+			<!-- first row -->
+			<div class="flex flex-col justify-center items-start">
+				<div class="text-4xl mb-4 font-bold text-balance">Track Your Own Streams!</div>
+				<p>
+					Track your own Twitch streams to notify when you go live to
+					your Discord community! Optionally ping a dedicated role for
+					when you go live, separate from when your friends go live.
+				</p>
+			</div>
+			<div class="">
+			    <img src="/images/hero/discordbot_preview.png" alt="GoRyve Bot Preview" width="500" class="shadow-2xl" />
+			</div>
+			<!-- 2nd row -->
+			<div class="">
+			    <img src="/images/hero/trackfriends_preview.png" alt="GoRyve Track Friends Preview" width="500" class="shadow-2xl" />
+			</div>
+			<div class="flex flex-col justify-center items-start">
+				<div class="text-4xl mb-4 font-bold text-balance">
+					Track Your Friends' Streams!
+				</div>
+				<p>
+					Track your friends' Twitch streams and be notified via a
+					Discord channel or ping when they go live! The slots between
+					yourself and your friends share the same pool of{" "}
+					<b>10 slots</b> for the free tier!
+				</p>
+			</div>
+			<!-- 3rd row -->
+			<div class="flex flex-col justify-center items-start">
+				<div class="text-4xl mb-4 font-bold text-balance">
+					Notify Dedicated Channels & Pings
+				</div>
+				<p>
+					Separate your own stream notification channel from your
+					friends' stream notification channel. Optionally ping
+					dedicated roles when you or your friends go live!
+				</p>
+			</div>
+			<div class=""><img src="/images/hero/ping_preview.png" alt="GoRyve Ping Preview" width="500" class="shadow-2xl" /></div>
+			<!-- 4th row -->
+			<div class=""><img src="/images/hero/subscribe_preview.png" alt="GoRyve upgrade or downgrade Preview" width="500" class="shadow-2xl" /></div>
+			<div class="flex flex-col justify-center items-start">
+				<div class="text-4xl mb-4 font-bold text-balance">
+					Subscribe or Unsubscribe with a Single Command!
+				</div>
+				<p>
+					Upgraded number of slots but want to unsubscribe? Do it
+					easily without a worry! Unsubscribing will result in the
+					slot reduction at the end of the billing period, not
+					immediately!
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	.wave-container {
+		height: 200px;
+		background-color: var(--color-secondary);
+		position: relative;
+	}
+
+	.wave-container::before {
+		content: "";
+		width: 100%;
+		height: 120px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		transform: rotate(180deg);
+		background-size: auto;
+		background-repeat: repeat no-repeat;
+		background-position: 36vw bottom;
+		background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200 134' fill='none' xmlns='http://www.w3.org/2000/svg'><path fill='%23272934' d='M0 22L33 19C82 13 133 14 200 29C267 44 333 67 400 70C467 74 533 59 600 40C667 22 733 0 800 0C867 0 933 22 1000 29C1067 37 1133 29 1167 26L1200 22V134H1167C1133 134 1067 134 1000 134C933 134 867 134 800 134C733 134 667 134 600 134C533 134 467 134 400 134C333 134 267 134 200 134C133 134 67 134 33 134H0V22.332Z' /></svg>");
+	}
+
+	@media (max-width: 850px) {
+		.wave-container::before {
+			height: 65px;
+		}
+	}
+</style>

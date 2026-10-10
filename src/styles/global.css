@@ -2,10 +2,12 @@
 
 @theme {
     --color-primary: #ffffff;
-    --color-secondary: #1A2634;
+    --color-secondary: #37353E;
+    --color-gray-1: #44444E;
+    --color-discord-gray: #272934;
     --color-accent-light: #9463F3;
     --color-accent-dark: #250B3E;
-    --color-discord: #5562EA;
+    --color-discord-blue: #5562EA;
 }
 
 @font-face {

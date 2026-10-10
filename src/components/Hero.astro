@@ -1,8 +1,5 @@
----
----
-
-<section class="bg-secondary text-white">
-	<div class="flex lg:flex-row flex-col justify-center items-center max-w-7xl h-screen mx-auto">
+<section class="bg-discord-gray text-white">
+	<div class="flex lg:flex-row flex-col justify-center items-center max-w-7xl h-[80vh] mx-auto">
 		<div class="">
 			<h1 class="font-bold text-4xl mb-8">
 				Supercharge Your Discord With{" "}
@@ -16,7 +13,7 @@
 				<a
 					href="https://twitch.tv/RythonDev"
 					target="_blank"
-					class="underline"
+					class="underline hover:text-accent-light"
 				>
 					RythonDev
 				</a>
@@ -26,12 +23,34 @@
 				<a
 					href="https://discord.com/oauth2/authorize?client_id=1555196369671688222&permissions=4503874505279536&integration_type=0&scope=bot"
 					target="_blank"
-					class="px-4 py-3 bg-accent-light text-black rounded-md hover:bg-discord hover:text-white transition-colors duration-75"
+					class="px-4 py-3 bg-accent-light text-black rounded-md hover:bg-discord-blue hover:text-white transition-colors duration-75"
 				>
-				    Add to Discord
+					Add to Discord
 				</a>
 			</div>
 		</div>
-		<div class="lg:w-1/2"></div>
+		<div class="lg:w-1/2 relative perspective-near group">
+			<img
+				src="/images/hero/discordbot_preview.png"
+				alt="GoRyve Bot Preview"
+				width="500"
+				class="rounded-xl absolute top-1/2 left-1/2 -translate-y-1/2 translate-x-[calc(-50%+30px)] shadow-2xl -rotate-y-5 group-hover:rotate-y-0 transition-all duration-500 group-hover:-translate-x-1/2"
+			/>
+			<div class="absolute z-100 top-1/2 left-1/2 -translate-1/2">
+			    <div class="w-125 aspect-video bg-[rgba(0,0,0,0.5)] opacity-0 group-hover:opacity-100 transition-all duration-300 delay-75 flex justify-center items-center rounded-xl">
+    			    <a
+    					href="https://discord.com/oauth2/authorize?client_id=1555196369671688222&permissions=4503874505279536&integration_type=0&scope=bot"
+    					target="_blank"
+    					class="text-white px-5 py-3 bg-discord-blue border-discord-blue border-solid border-2 rounded-xl transition-colors duration-300 hover:bg-primary hover:text-discord-blue"
+    				>
+    					Bot Invite
+    				</a>
+				</div>
+			</div>
+		</div>
 	</div>
 </section>
+
+<style>
+
+</style>
