@@ -1,8 +1,8 @@
 <section class="w-full bg-discord-gray text-white pb-10">
 	<div class="wave-container"></div>
-	<div class="w-full max-w-7xl mx-auto">
+	<div class="mx-auto w-full max-w-7xl px-6 sm:px-8">
 		<div class="lg:w-1/2">
-			<h2 class="font-bold text-4xl mb-4">Ready to try GoRyve?</h2>
+			<h2 class="mb-4 text-3xl font-bold sm:text-4xl">Ready to try GoRyve?</h2>
 			<p>
 				Notify your community when you or your friends go live!
 				The streamcord alternative with a generous free tier,
@@ -23,7 +23,7 @@
 
 <style>
 	.wave-container {
-		height: 150px;
+		height: 100px;
 		background-color: var(--color-discord-gray);
 		position: relative;
 	}
@@ -46,6 +46,12 @@
 	@media (max-width: 850px) {
 		.wave-container::before {
 			height: 65px;
+		}
+	}
+
+	@media (min-width: 1024px) {
+		.wave-container {
+			height: 150px;
 		}
 	}
 </style>

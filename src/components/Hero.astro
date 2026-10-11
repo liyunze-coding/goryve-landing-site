@@ -1,9 +1,11 @@
 <section class="bg-discord-gray text-white">
-	<div class="flex lg:flex-row flex-col justify-center items-center max-w-7xl h-[80vh] mx-auto">
-		<div class="">
-			<h1 class="font-bold text-4xl mb-8">
+	<div class="mx-auto flex min-h-[80vh] max-w-7xl flex-col items-center justify-center gap-14 px-6 py-16 sm:px-8 lg:flex-row lg:gap-10 lg:py-20">
+		<div class="w-full text-center lg:w-1/2 lg:text-left">
+			<h1 class="mb-8 text-3xl font-bold leading-tight sm:text-4xl">
 				Supercharge Your Discord With{" "}
-				<span class="text-accent-light text-6xl">GoRyve</span>
+				<span class="text-accent-light text-5xl sm:text-6xl">
+					GoRyve
+				</span>
 			</h1>
 			<p class="text-lg text-balance">
 				Notify your community when you or your friends go live,
@@ -29,28 +31,25 @@
 				</a>
 			</div>
 		</div>
-		<div class="lg:w-1/2 relative perspective-near group">
+		<div class="group relative w-full max-w-125 perspective-near lg:w-1/2">
 			<img
 				src="/images/hero/discordbot_preview.png"
 				alt="GoRyve Bot Preview"
 				width="500"
-				class="rounded-xl absolute top-1/2 left-1/2 -translate-y-1/2 translate-x-[calc(-50%+30px)] shadow-2xl -rotate-y-5 group-hover:rotate-y-0 transition-all duration-500 group-hover:-translate-x-1/2"
+				class="h-auto w-full rounded-xl shadow-2xl transition-all duration-500 lg:-rotate-y-5 lg:translate-x-7.5 lg:group-hover:translate-x-0 lg:group-hover:rotate-y-0"
 			/>
-			<div class="absolute z-100 top-1/2 left-1/2 -translate-1/2">
-			    <div class="w-125 aspect-video bg-[rgba(0,0,0,0.5)] opacity-0 group-hover:opacity-100 transition-all duration-300 delay-75 flex justify-center items-center rounded-xl">
-    			    <a
-    					href="https://discord.com/oauth2/authorize?client_id=1555196369671688222&permissions=4503874505279536&integration_type=0&scope=bot"
-    					target="_blank"
-    					class="text-white px-5 py-3 bg-discord-blue border-discord-blue border-solid border-2 rounded-xl transition-colors duration-300 hover:bg-primary hover:text-discord-blue"
-    				>
-    					Bot Invite
-    				</a>
-				</div>
+			<div
+				id="bot-invite-div"
+				class="absolute inset-0 z-10 hidden items-center justify-center rounded-xl bg-[rgba(0,0,0,0.5)] opacity-0 transition-opacity delay-0 duration-0 lg:flex lg:group-hover:opacity-100 lg:group-hover:delay-200 lg:group-hover:duration-500"
+			>
+				<a
+					href="https://discord.com/oauth2/authorize?client_id=1555196369671688222&permissions=4503874505279536&integration_type=0&scope=bot"
+					target="_blank"
+					class="text-white px-5 py-3 bg-discord-blue border-discord-blue border-solid border-2 rounded-xl transition-colors duration-300 hover:bg-primary hover:text-discord-blue"
+				>
+					Bot Invite
+				</a>
 			</div>
 		</div>
 	</div>
 </section>
-
-<style>
-
-</style>
